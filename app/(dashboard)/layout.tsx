@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className="flex h-screen overflow-hidden">
 
           {/* Sidebar */}
-          <Sidebar />
+          <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
    
 
 
