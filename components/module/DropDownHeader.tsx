@@ -41,10 +41,10 @@ const DropDownHeader = () => {
         aria-haspopup="true"
         aria-expanded="true"
       >
-        <Image src='/dashboard/images/user-avatar-32.png' width={25} height={25} className="rounded-full" alt="user icon"/>
+        <Image src='/dashboard/images/user-avatar-32.png' width={25} height={25} className="rounded-full rotate-180" alt="user icon"/>
         <div className="flex items-center truncate">
-          <span className="truncate ml-2 text-sm font-medium dark:text-slate-300 group-hover:text-slate-800 dark:group-hover:text-slate-200">
-            Acme Inc.
+          <span className="truncate m-2 text-sm font-medium dark:text-slate-300 group-hover:text-slate-800 dark:group-hover:text-slate-200">
+           نریمان تاتاری
           </span>
           <svg
             className="w-3 h-3 shrink-0 ml-1 fill-current text-slate-400"
@@ -58,14 +58,14 @@ const DropDownHeader = () => {
         ref={dropdown}
         onFocus={() => setDropdownOpen(true)}
         onBlur={() => setDropdownOpen(false)}
-      className={`${dropdownOpen ? `` :`hidden`} origin-top-right z-10 absolute top-full min-w-44 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 py-1.5 rounded shadow-lg overflow-hidden mt-1 right-0 enter-done`}>
+      className={`${dropdownOpen ? `` :`hidden`} origin-top-right z-10 absolute top-full min-w-44 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 py-1.5 rounded shadow-lg overflow-hidden mt-1 left-0 enter-done`}>
         <div>
           <div className="pt-0.5 pb-2 px-3 mb-1 border-b border-slate-200 dark:border-slate-700">
             <div className="font-medium text-slate-800 dark:text-slate-100">
-              Acme Inc.
+            نریمان تاتاری
             </div>
             <div className="text-xs text-slate-500 dark:text-slate-400 italic">
-              Administrator
+              مدیر
             </div>
           </div>
           <ul>
@@ -74,7 +74,7 @@ const DropDownHeader = () => {
                 className="font-medium text-sm text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center py-1 px-3"
                 href="/settings"
               >
-                Settings
+                تنظیمات
               </a>
             </li>
             <li>
@@ -82,7 +82,7 @@ const DropDownHeader = () => {
                 className="font-medium text-sm text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 flex items-center py-1 px-3"
                 href="/signin"
               >
-                Sign Out
+                خروج
               </a>
             </li>
           </ul>

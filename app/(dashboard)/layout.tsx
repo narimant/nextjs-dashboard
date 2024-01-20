@@ -17,7 +17,7 @@ export default function RootLayout({
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
-    <html lang="en">
+    <html lang="fa" dir='rtl' >
       <body className="flex h-screen overflow-hidden">
 
           {/* Sidebar */}

@@ -4,14 +4,14 @@ const DashboardCard2 = () => {
     return (
         <div className="col-span-full xl:col-span-6 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
         <header className="px-5 py-4 border-b border-slate-100 dark:border-slate-700">
-          <h2 className="font-semibold text-slate-800 dark:text-slate-100">Recent Activity</h2>
+          <h2 className="font-semibold text-slate-800 dark:text-slate-100">فعالیتهای اخیر </h2>
         </header>
         <div className="p-3">
           {/* Card content */}
           {/* "Today" group */}
           <div>
             <header className="text-xs uppercase text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-700 dark:bg-opacity-50 rounded-sm font-semibold p-2">
-              Today
+              امروز
             </header>
             <ul className="my-1">
               {/* Item */}
@@ -25,17 +25,18 @@ const DashboardCard2 = () => {
                   <div className="grow flex justify-between">
                     <div className="self-center">
                       <a className="font-medium text-slate-800 hover:text-slate-900 dark:text-slate-100 dark:hover:text-white" href="#0">
-                        Nick Mark
+                        علی اصغری
                       </a>{' '}
-                      mentioned{' '}
+                      از{' '}
                       <a className="font-medium text-slate-800 hover:text-slate-900 dark:text-slate-100 dark:hover:text-white" href="#0">
-                        Sara Smith
+                        سارا غنبری
                       </a>{' '}
-                      in a new post
+                      در یک پست جدید نام برده
                     </div>
                     <div className="shrink-0 self-end ml-2">
-                      <a className="font-medium text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400" href="#0">
-                        View<span className="hidden sm:inline"> -&gt;</span>
+                      <a className="font-medium text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 flex justify-start items-center gap-2" href="#0">
+                        <span>نمایش</span>
+                        <span className="hidden sm:inline"> -&gt;</span>
                       </a>
                     </div>
                   </div>
@@ -62,7 +63,7 @@ const DashboardCard2 = () => {
                     </div>
                     <div className="shrink-0 self-end ml-2">
                       <a className="font-medium text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400" href="#0">
-                        View<span className="hidden sm:inline"> -&gt;</span>
+                        نمایش<span className="hidden sm:inline"> -&gt;</span>
                       </a>
                     </div>
                   </div>
@@ -88,7 +89,7 @@ const DashboardCard2 = () => {
                     </div>
                     <div className="shrink-0 self-end ml-2">
                       <a className="font-medium text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400" href="#0">
-                        View<span className="hidden sm:inline"> -&gt;</span>
+                        نمایش<span className="hidden sm:inline"> -&gt;</span>
                       </a>
                     </div>
                   </div>
@@ -99,7 +100,7 @@ const DashboardCard2 = () => {
           {/* "Yesterday" group */}
           <div>
             <header className="text-xs uppercase text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-700 dark:bg-opacity-50 rounded-sm font-semibold p-2">
-              Yesterday
+              دیروز
             </header>
             <ul className="my-1">
               {/* Item */}
@@ -122,7 +123,7 @@ const DashboardCard2 = () => {
                     </div>
                     <div className="shrink-0 self-end ml-2">
                       <a className="font-medium text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400" href="#0">
-                        View<span className="hidden sm:inline"> -&gt;</span>
+                        نمایش<span className="hidden sm:inline"> -&gt;</span>
                       </a>
                     </div>
                   </div>
@@ -149,7 +150,7 @@ const DashboardCard2 = () => {
                     </div>
                     <div className="shrink-0 self-end ml-2">
                       <a className="font-medium text-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400" href="#0">
-                        View<span className="hidden sm:inline"> -&gt;</span>
+                        نمایش<span className="hidden sm:inline"> -&gt;</span>
                       </a>
                     </div>
                   </div>

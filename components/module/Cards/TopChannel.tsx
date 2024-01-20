@@ -4,7 +4,7 @@ const TopChannel = () => {
     return (
         <div className="col-span-full xl:col-span-8 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
         <header className="px-5 py-4 border-b border-slate-100 dark:border-slate-700">
-          <h2 className="font-semibold text-slate-800 dark:text-slate-100">Top Channels</h2>
+          <h2 className="font-semibold text-slate-800 dark:text-slate-100">کانالهای برتر</h2>
         </header>
         <div className="p-3">
           {/* Table */}
@@ -14,19 +14,19 @@ const TopChannel = () => {
               <thead className="text-xs uppercase text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-700 dark:bg-opacity-50 rounded-sm">
                 <tr>
                   <th className="p-2">
-                    <div className="font-semibold text-left">Source</div>
+                    <div className="font-semibold text-left">منبع</div>
                   </th>
                   <th className="p-2">
-                    <div className="font-semibold text-center">Visitors</div>
+                    <div className="font-semibold text-center">بازدیدکننده</div>
                   </th>
                   <th className="p-2">
-                    <div className="font-semibold text-center">Revenues</div>
+                    <div className="font-semibold text-center">درآمد</div>
                   </th>
                   <th className="p-2">
-                    <div className="font-semibold text-center">Sales</div>
+                    <div className="font-semibold text-center">حراج</div>
                   </th>
                   <th className="p-2">
-                    <div className="font-semibold text-center">Conversion</div>
+                    <div className="font-semibold text-center">نرخ تبدیل</div>
                   </th>
                 </tr>
               </thead>

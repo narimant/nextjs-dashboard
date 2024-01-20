@@ -14,17 +14,17 @@ const SideBarMenuItem = ({menuItem}:any) => {
     const [subMenu,setSubMenu]=useState(false)
     const router=usePathname();
     useEffect(()=>{
-        if(router===menuItem.mainPath ){
-            setSubMenu(true)
-         }
+        console.log('mainpath',menuItem.mainPath);
+        console.log('router',router);
+       
     },[])
     return (
 
         <ul className={`w-full text-white font-semibold`}>
-            <li className={` ${router===menuItem.mainPath && 'bg-slate-900 rounded-xl'} px-4 py-2`}>
+            <li className={`  px-4 py-2`}>
                 <button onClick={()=>setSubMenu(!subMenu)} className='text-gray-400 flex justify-between w-full items-center gap-3 py-2'>
                    <span className='flex justify-start gap-2 items-center'>
-                   <span className={`${router===menuItem.mainPath && `text-indigo-600`}`}>{menuItem.icon}</span>
+                   <span className={`${router===menuItem.mainPath && `text-indigo-600`} text-xl`}>{menuItem.icon}</span>
                     <span className='text-white'>{menuItem.title}</span>
                    </span>
                     {subMenu ? (<IoIosArrowDown />) : (<IoIosArrowUp />)}
