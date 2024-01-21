@@ -3,22 +3,25 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 
-
+interface KonvaTextEventTarget extends EventTarget {
+  index: number
+}
 
 const DropDownHeader = () => {
 
     
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const trigger = useRef(null);
-  const dropdown = useRef(null);
+  const trigger = useRef<HTMLButtonElement >(null);
+  const dropdown = useRef<HTMLInputElement>(null);
 
   // close on click outside
   useEffect(() => {
-    const clickHandler = ({ target }:any) => {
-      console.log(target);
+    const clickHandler = ({ target  }:any ) => {
+    
+      
       if (!dropdown.current) return;
-      if (!dropdownOpen || dropdown.current.contains(target) || trigger.current.contains(target)) return;
+      if (!dropdownOpen || dropdown.current.contains(target) ) return;
       setDropdownOpen(false);
     };
     document.addEventListener('click', clickHandler);
@@ -27,7 +30,7 @@ const DropDownHeader = () => {
 
   // close if the esc key is pressed
   useEffect(() => {
-    const keyHandler = ({ keyCode }) => {
+    const keyHandler = ({ keyCode }:any ) => {
       if (!dropdownOpen || keyCode !== 27) return;
       setDropdownOpen(false);
     };

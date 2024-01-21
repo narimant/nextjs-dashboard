@@ -31,8 +31,9 @@ const GridView = () => {
         <span>تمام مشتری ها 248</span>
       </div>
 
-      <div>
-        <table className="w-full text-center">
+      <div className="">
+        <div className="overflow-x-scroll">
+        <table className="w-full min-w-[768px] text-center">
           <thead>
             <tr>
               <th><input type="checkbox" /></th>
@@ -67,6 +68,7 @@ const GridView = () => {
             }
           </tbody>
         </table>
+        </div>
         <div>
             <div className="flex justify-between items-center my-5 px-5">
             <span className="flex justify-start text-sm items-center gap-3 bg-indigo-600 text-white py-2 px-4 rounded-lg">

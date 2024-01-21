@@ -16,7 +16,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function ({ addVariant }) {
+    function ({ addVariant }:any) {
       addVariant('child', '& > *');
       addVariant('child-hover', '& > *:hover');
   }
