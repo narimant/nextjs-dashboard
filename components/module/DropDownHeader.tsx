@@ -2,6 +2,9 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
+
+
+
 const DropDownHeader = () => {
 
     
@@ -12,8 +15,8 @@ const DropDownHeader = () => {
 
   // close on click outside
   useEffect(() => {
-    const clickHandler = ({ target }) => {
-        console.log(target);
+    const clickHandler = ({ target }:any) => {
+      console.log(target);
       if (!dropdown.current) return;
       if (!dropdownOpen || dropdown.current.contains(target) || trigger.current.contains(target)) return;
       setDropdownOpen(false);

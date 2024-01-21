@@ -15,7 +15,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+@layer components {
+  .btn-purple-sm{
+    @apply bg-purple-400 py-1 px-3 rounded-md text-white text-sm
+  }
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

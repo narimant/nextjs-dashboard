@@ -19,48 +19,29 @@ type HeaderProps={
 
 const Sidebar = ({ sidebarOpen, setSidebarOpen }:HeaderProps) => {
     const Menus = [
-
         {
           title: 'داشبورد',
           icon:<MdOutlineDashboard />,
-          mainPath:'/dashboard',
           subMenus: [
-            {
-              title: 'داشبورد',
-              src: '/dashboard',
-            },
-           
-          ],
+            {title: 'داشبورد',src: '/dashboard',},
+           ],
         },
         {
           title: 'فروشگاه',
-          mainPath: '/dashboard/shop',
           icon: <FaShop />,
           subMenus: [
-            {
-              title: ' مشتریان',
-              src: '/dashboard/shop/customers',
-            },
-            {
-              title: 'سفارشات',
-              src: '/dashboard/shop/orders',
-            },   
+            {title: ' مشتریان',src: '/dashboard/shop/customers',},
+            {title: 'سفارشات', src: '/dashboard/shop/orders',},   
           ],
 
         },
-        ,
         {
           title: 'انجمن',
-          mainPath: '/Community',
           icon: <FaUsers />,
           subMenus: [
-            {
-              title: 'کاربران',
-              src: '/dashboard/community/users',
-            },
-             
-          ],
-          
+            {title: 'کاربران',src: '/dashboard/community/users', },
+            {title: 'پروفایل',src: '/dashboard/community/profile', },    
+          ],  
         },
        
        

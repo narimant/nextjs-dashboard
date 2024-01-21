@@ -16,7 +16,7 @@ type dataProps={
 
 const User = ({data}:dataProps) => {
     return (
-        <div className='p-5 bg-white dark:bg-slate-800 rounded-sm border border-slate-200 dark:border-slate-700 col-span-full lg:col-span-4 '>
+        <div className='p-5 shadow-lg bg-white dark:bg-slate-800 rounded-sm border border-slate-200 dark:border-slate-700 col-span-full lg:col-span-4 '>
          <div className='flex justify-between items-center'>
            <span className='flex justify-start items-center gap-3' >
            <Image src={data.img} width={70} height={70} alt='user image'  className='rounded-full'/>
